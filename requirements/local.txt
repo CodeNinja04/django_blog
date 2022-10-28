@@ -1,0 +1,14 @@
+-r base.txt
+
+psycopg2
+flake8
+black
+isort
+argh
+PyYAML
+watchdog
+
+pytest-django
+Faker
+pytest-cov
+pytest-factoryboy
