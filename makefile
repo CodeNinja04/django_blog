@@ -16,6 +16,9 @@ migrate:
 makemigrations:
 	docker compose -f local.yml run --rm api python3 manage.py makemigrations
 
+sqlmigrate:
+	docker compose -f local.yml run --rm api python3 manage.py sqlmigrate users 0001_initial 
+
 collectstatic:
 	docker compose -f local.yml run --rm api python3 manage.py collectstatic --no-input --clear
 
