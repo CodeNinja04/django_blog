@@ -53,7 +53,9 @@ isort-diff:
 	docker compose -f local.yml exec api isort . --diff --skip env --skip migrations
 
 isort:
-	docker compose -f local.yml exec api isort . --skip env --skip migrations	
+	docker compose -f local.yml exec api isort . --skip env --skip migrations
+
+
 
 
 
